@@ -1,0 +1,11 @@
+{
+  "default": "your_default_board_id",
+  "hindu:gu": "your_gujarati_hindu_board_id",
+  "hindu:hi": "your_hindi_hindu_board_id",
+  "hindu:en": "your_english_hindu_board_id",
+  "sikh": "your_sikh_board_id",
+  "christian": "your_christian_board_id",
+  "islamic": "your_islamic_board_id",
+  "buddhist": "your_buddhist_board_id",
+  "jain": "your_jain_board_id"
+}

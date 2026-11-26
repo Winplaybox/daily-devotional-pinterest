@@ -1,0 +1,326 @@
+{
+  "hindu": {
+    "name": "Hinduism",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Lord Shiva",
+        "prompt_subject": "Lord Shiva meditating peacefully in a lush vibrant forest with sacred Nandi bull beside him, Shiva Lingam with white flowers and bilva leaves in front, golden Trishul and Damaru, crescent moon in his matted hair, glowing divine aura, ultra-detailed devotional digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#HarHarMahadev", "#OmNamahShivaya", "#ShubhSomvar", "#LordShiva", "#MondayBlessings"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Lord Hanuman",
+        "prompt_subject": "Lord Hanuman in serene devotional pose with golden Gada mace, glowing saffron and orange sunrise aura, blooming marigold flowers and sacred temple bells, divine strength and peace, ultra-detailed devotional digital art",
+        "accent_color": "#FF9933",
+        "hashtags": ["#JaiHanuman", "#Bajrangbali", "#ShubhMangalvar", "#LordHanuman", "#TuesdayBlessings"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Lord Ganesha",
+        "prompt_subject": "Lord Ganesha seated on a blooming pink lotus throne, holding modak and blessing hand in abhaya mudra, red hibiscus flowers, warm golden morning temple lamps, radiant auspicious aura, ultra-detailed devotional digital art",
+        "accent_color": "#FFCC33",
+        "hashtags": ["#GanpatiBappaMorya", "#JaiGanesha", "#ShubhBudhvar", "#LordGanesha", "#WednesdayBlessings"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Lord Vishnu & Sai Baba",
+        "prompt_subject": "Lord Vishnu in divine radiant form with golden Sudarshana Chakra, conch shell, and lotus flower amidst serene celestial clouds and yellow marigold garlands, warm golden morning glow, ultra-detailed devotional digital art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#OmNamoBhagavateVasudevaya", "#JaiShriHari", "#ShubhGuruvar", "#LordVishnu", "#ThursdayBlessings"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Goddess Mahalakshmi",
+        "prompt_subject": "Goddess Mahalakshmi seated gracefully on a giant pink lotus over tranquil water, showering golden blessings, flanked by white elephants, glowing diyas and red roses, radiant divine aura, ultra-detailed devotional digital art",
+        "accent_color": "#FF66B2",
+        "hashtags": ["#JaiMaaLakshmi", "#ShubhShukravar", "#MaaDurga", "#FridayBlessings", "#DivineMother"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Lord Shani Dev & Hanuman",
+        "prompt_subject": "Sacred deep sapphire blue temple atmosphere with glowing oil lamps, Lord Hanuman and sacred Shani Dev divine protective aura, serene twilight-to-dawn sky with golden stars and lotus flowers, ultra-detailed devotional digital art",
+        "accent_color": "#80BFFF",
+        "hashtags": ["#JaiShaniDev", "#JaiHanuman", "#ShubhShanivar", "#SaturdayBlessings", "#DevotionalArt"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Surya Dev",
+        "prompt_subject": "Surya Dev the Sun God riding a radiant golden chariot pulled by seven white horses across a glowing saffron-gold sunrise sky, lotus flowers and sacred river reflections below, ultra-detailed devotional digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#OmSuryayaNamah", "#SuryaDev", "#ShubhRavivar", "#SundayBlessings", "#GoodMorning"]
+      }
+    ]
+  },
+  "sikh": {
+    "name": "Sikhism",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Harmandir Sahib & Ek Onkar",
+        "prompt_subject": "Golden Temple Harmandir Sahib shimmering in the sacred sarovar at golden sunrise, soft lotus petals on water, peaceful misty morning sky, radiant divine light, ultra-detailed spiritual digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#Waheguru", "#GoldenTemple", "#SatnamWaheguru", "#Sikhism", "#MorningBlessings"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Waheguru Simran",
+        "prompt_subject": "Serene Sikh Gurdwara courtyard at dawn with glowing golden Ek Onkar light rays, saffron Nishan Sahib flag gently waving, peaceful flowers and morning mist, ultra-detailed spiritual digital art",
+        "accent_color": "#FF9933",
+        "hashtags": ["#WaheguruJiKaKhalsa", "#EkOnkar", "#SikhBlessings", "#GoodMorning"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Sacred Sarovar Dawn",
+        "prompt_subject": "Tranquil white marble Gurdwara reflection in calm water at sunrise, golden lotus flowers, soft amber and sky blue morning glow, ultra-detailed spiritual digital art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#SatnamSriWaheguru", "#Gurdwara", "#PeacefulMorning"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Guru Granth Sahib Prakash",
+        "prompt_subject": "Ornate golden canopy over a sacred palki sahib illuminated by warm morning sunlight rays, fragrant rose petals and marigolds, serene spiritual atmosphere, ultra-detailed digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#DhanGuruGranthSahibJi", "#Waheguru", "#MorningPrayer"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Khanda & Divine Light",
+        "prompt_subject": "Radiant golden Khanda emblem glowing amidst soft sunrise clouds and blooming white lotus flowers, peaceful devotional atmosphere, ultra-detailed spiritual digital art",
+        "accent_color": "#FFCC33",
+        "hashtags": ["#Waheguru", "#Khanda", "#SikhHeritage", "#FridayBlessings"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Amrit Vela Peace",
+        "prompt_subject": "Amrit Vela early morning mist over Harmandir Sahib with warm golden lamps reflecting on the water, serene stars fading into dawn, ultra-detailed spiritual digital art",
+        "accent_color": "#80BFFF",
+        "hashtags": ["#AmritVela", "#WaheguruSimran", "#SaturdayBlessings"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Sarbat Da Bhala",
+        "prompt_subject": "Warm golden sunbeams shining over a peaceful Gurdwara dome surrounded by blooming flowers and white doves in flight, uplifting spiritual digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#SarbatDaBhala", "#Waheguru", "#SundayBlessings"]
+      }
+    ]
+  },
+  "christian": {
+    "name": "Christianity",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Morning Cross & Grace",
+        "prompt_subject": "Radiant golden cross standing on a peaceful hillside at sunrise, warm sunbeams breaking through soft clouds, white lilies in bloom, uplifting spiritual digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#MondayBlessings", "#ChristianQuotes", "#GodIsGood", "#MorningPrayer"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Holy Spirit Dove",
+        "prompt_subject": "Luminous white dove descending through warm golden rays of morning light over calm waters and blooming olive branches, serene spiritual digital art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#HolySpirit", "#TuesdayBlessings", "#Faith", "#Peace"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Good Shepherd",
+        "prompt_subject": "Peaceful green meadow at dawn with golden sunlight, gentle stream, blooming wildflowers, and a serene wooden shepherd staff, hopeful spiritual digital art",
+        "accent_color": "#99E699",
+        "hashtags": ["#Psalm23", "#WednesdayBlessings", "#Grace", "#ChristianArt"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Sacred Cathedral Light",
+        "prompt_subject": "Warm morning sunlight streaming through ornate stained glass cathedral windows illuminating a peaceful altar with white roses, spiritual digital art",
+        "accent_color": "#FFCC33",
+        "hashtags": ["#ThursdayBlessings", "#Gratitude", "#FaithOverFear"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Grace & Mercy",
+        "prompt_subject": "Serene wooden cross silhouetted against a breathtaking rose-gold and amber dawn sky with soft glowing mist and white flowers, spiritual digital art",
+        "accent_color": "#FF99AA",
+        "hashtags": ["#FridayBlessings", "#JesusLovesYou", "#Grace"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Peaceful Sabbath",
+        "prompt_subject": "Open Bible on a rustic wooden table beside a glowing candle and fresh morning flowers with warm sunlight streaming through a window, spiritual digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#SaturdayBlessings", "#BibleVerse", "#MorningDevotion"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Sunday Resurrection Dawn",
+        "prompt_subject": "Glorious golden sunrise over a peaceful valley with radiant rays of hope, blooming white lilies and doves soaring in the sky, spiritual digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#SundayBlessings", "#BlessedSunday", "#PraiseTheLord"]
+      }
+    ]
+  },
+  "islamic": {
+    "name": "Islam",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Fajr Noor",
+        "prompt_subject": "Peaceful grand mosque courtyard at Fajr dawn with intricate Islamic geometric arches, glowing golden brass lanterns, crescent moon in a soft pastel sunrise sky, serene spiritual art, no people",
+        "accent_color": "#FFD700",
+        "hashtags": ["#IslamicArt", "#MorningDua", "#Alhamdulillah", "#MondayBlessings"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Sacred Geometry",
+        "prompt_subject": "Ornate emerald green and gold Islamic arabesque geometric mandala with glowing morning light rays and delicate floral motifs, ultra-detailed spiritual art, no figures",
+        "accent_color": "#66FFB2",
+        "hashtags": ["#Bismillah", "#IslamicCalligraphy", "#SubhanAllah"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Mosque Dome at Dawn",
+        "prompt_subject": "Majestic white and gold mosque domes and minarets reflected in a calm pool at sunrise, surrounded by blooming jasmine and roses, serene spiritual art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#MashAllah", "#PeacefulMorning", "#IslamicArchitecture"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Lanterns of Light",
+        "prompt_subject": "Traditional ornate Moroccan and Ottoman golden lanterns glowing warmly inside a serene arch overlooking a starry dawn sky, spiritual digital art",
+        "accent_color": "#FFCC33",
+        "hashtags": ["#Alhamdulillah", "#ThursdayBlessings", "#Dua"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Jummah Mubarak",
+        "prompt_subject": "Breathtaking grand mosque interior bathed in golden Friday morning sunbeams through latticework windows, intricate floral carpets and glowing chandeliers, spiritual art, no people",
+        "accent_color": "#FFD700",
+        "hashtags": ["#JummahMubarak", "#BlessedFriday", "#IslamicArt"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Crescent & Stars",
+        "prompt_subject": "Deep sapphire blue twilight sky with a luminous golden crescent moon over a peaceful mosque silhouette and blooming desert roses, spiritual digital art",
+        "accent_color": "#80BFFF",
+        "hashtags": ["#SubhanAllah", "#SaturdayBlessings", "#IslamicQuotes"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Garden of Peace",
+        "prompt_subject": "Tranquil Islamic paradise garden with flowing fountain, geometric marble pathways, blooming roses, and warm golden sunrise light, spiritual digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#Alhamdulillah", "#SundayBlessings", "#Peace"]
+      }
+    ]
+  },
+  "buddhist": {
+    "name": "Buddhism",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Gautama Buddha",
+        "prompt_subject": "Serene golden Gautama Buddha meditating under a lush Bodhi tree beside a tranquil lotus pond at sunrise, soft golden rays, ultra-detailed spiritual digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#Buddha", "#Mindfulness", "#InnerPeace", "#MondayBlessings"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Sacred Lotus",
+        "prompt_subject": "Luminous pink and gold lotus flower blooming in crystal clear water with morning dewdrops and gentle golden light, peaceful Zen digital art",
+        "accent_color": "#FF99CC",
+        "hashtags": ["#Lotus", "#Zen", "#Buddhism", "#TuesdayBlessings"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Dharma Wheel",
+        "prompt_subject": "Ornate golden Dharma Wheel glowing in misty Himalayan mountain sunrise with prayer flags and cherry blossoms, serene spiritual digital art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#Dharma", "#Peace", "#WednesdayBlessings"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Temple Sanctuary",
+        "prompt_subject": "Peaceful ancient Buddhist temple surrounded by misty bamboo forest, warm glowing lanterns, and morning sunbeams, spiritual digital art",
+        "accent_color": "#99E699",
+        "hashtags": ["#Meditation", "#Compassion", "#ThursdayBlessings"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Mandala of Peace",
+        "prompt_subject": "Intricate glowing golden and turquoise Buddhist mandala floating over calm lotus waters at dawn, serene spiritual digital art",
+        "accent_color": "#66E0FF",
+        "hashtags": ["#Mandala", "#Mindfulness", "#FridayBlessings"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Candlelight Serenity",
+        "prompt_subject": "Serene Buddha statue illuminated by warm floating butter lamps and incense smoke against a peaceful twilight sky, spiritual digital art",
+        "accent_color": "#FFCC66",
+        "hashtags": ["#NamoBuddhaya", "#SaturdayBlessings", "#Zen"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Compassion Sunrise",
+        "prompt_subject": "Radiant golden sunrise over a tranquil mountain stupa with white doves and blooming lotus flowers, uplifting spiritual digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#BuddhaQuotes", "#SundayBlessings", "#GoodMorning"]
+      }
+    ]
+  },
+  "jain": {
+    "name": "Jainism",
+    "weekdays": [
+      {
+        "day": "Monday",
+        "deity": "Lord Mahavir Swami",
+        "prompt_subject": "Serene white marble statue of Lord Mahavir Swami in deep meditation surrounded by glowing golden aura and blooming white lotus flowers at sunrise, ultra-detailed spiritual art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#JaiJinendra", "#MahavirSwami", "#Ahimsa", "#MondayBlessings"]
+      },
+      {
+        "day": "Tuesday",
+        "deity": "Sacred Temple",
+        "prompt_subject": "Intricate white marble Jain temple spires glowing in golden morning sunlight atop a peaceful green hill with lotus ponds, spiritual digital art",
+        "accent_color": "#FFE066",
+        "hashtags": ["#JaiJinendra", "#JainTemple", "#TuesdayBlessings"]
+      },
+      {
+        "day": "Wednesday",
+        "deity": "Ahimsa & Peace",
+        "prompt_subject": "Glowing golden lotus and sacred Jain Ahimsa symbol radiating peaceful light over calm waters and white doves, spiritual digital art",
+        "accent_color": "#99E699",
+        "hashtags": ["#Ahimsa", "#NavkarMantra", "#WednesdayBlessings"]
+      },
+      {
+        "day": "Thursday",
+        "deity": "Navkar Mantra Aura",
+        "prompt_subject": "Warm golden spiritual mandala with five sacred colors representing Pancha Parmeshthi glowing softly amidst lotus petals, spiritual digital art",
+        "accent_color": "#FFCC33",
+        "hashtags": ["#NavkarMantra", "#JaiJinendra", "#ThursdayBlessings"]
+      },
+      {
+        "day": "Friday",
+        "deity": "Ashtamangala Light",
+        "prompt_subject": "Ornate golden Ashtamangala motifs illuminated by warm morning diyas and fragrant white jasmine flowers, serene spiritual digital art",
+        "accent_color": "#FFD700",
+        "hashtags": ["#Jainism", "#FridayBlessings", "#Peace"]
+      },
+      {
+        "day": "Saturday",
+        "deity": "Mountain Shrine",
+        "prompt_subject": "Sacred Shatrunjaya-inspired marble temples above soft morning clouds at sunrise, peaceful golden glow, spiritual digital art",
+        "accent_color": "#80BFFF",
+        "hashtags": ["#Palitana", "#JaiJinendra", "#SaturdayBlessings"]
+      },
+      {
+        "day": "Sunday",
+        "deity": "Eternal Enlightenment",
+        "prompt_subject": "Luminous golden sunrise shining through carved marble temple arches onto a serene meditating Tirthankara, spiritual digital art",
+        "accent_color": "#FFB833",
+        "hashtags": ["#JaiJinendra", "#SundayBlessings", "#GoodMorning"]
+      }
+    ]
+  }
+}
