@@ -66,6 +66,34 @@ def math_sin_approx(t: float) -> float:
     return max(0.0, math.sin(t * math.pi))
 
 
+def _generate_huggingface_art(prompt: str, output_path: Path) -> Path | None:
+    """Free/freemium AI image generation via Hugging Face Inference API (HF_TOKEN)."""
+    hf_token = os.getenv("HF_TOKEN", "").strip()
+    if not hf_token or hf_token.startswith("your_"):
+        return None
+    import requests
+
+    hf_model = os.getenv("HF_IMAGE_MODEL", "black-forest-labs/FLUX.1-schnell").strip()
+    url = f"https://router.huggingface.co/hf-inference/models/{hf_model}"
+    try:
+        resp = requests.post(
+            url,
+            headers={"Authorization": f"Bearer {hf_token}"},
+            json={"inputs": prompt},
+            timeout=90,
+        )
+        if resp.ok and resp.headers.get("content-type", "").startswith("image/"):
+            img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+            img = _fit_vertical_poster(img, 1000, 1500)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            img.save(output_path, format="PNG")
+            return output_path
+        print(f"[warn] Hugging Face '{hf_model}' returned {resp.status_code}; trying next fallback...")
+    except Exception as exc:
+        print(f"[warn] Hugging Face failed ({type(exc).__name__}); trying next fallback...")
+    return None
+
+
 def _generate_pollinations_art(
     prompt: str,
     target_date: date,
@@ -137,6 +165,10 @@ def generate_artwork(
                         return output_path, True
             except Exception as exc:
                 print(f"[warn] Gemini model '{model_name}' unavailable ({type(exc).__name__}); trying fallback...")
+
+    hf_path = _generate_huggingface_art(prompt, output_path)
+    if hf_path is not None:
+        return hf_path, True
 
     pollinations_path = _generate_pollinations_art(prompt, target_date, religion, output_path)
     if pollinations_path is not None:
