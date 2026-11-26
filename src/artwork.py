@@ -66,6 +66,31 @@ def math_sin_approx(t: float) -> float:
     return max(0.0, math.sin(t * math.pi))
 
 
+def _generate_pollinations_art(
+    prompt: str,
+    target_date: date,
+    religion: str,
+    output_path: Path,
+) -> Path | None:
+    """Free AI image generation fallback via Pollinations when Gemini image quota is 0."""
+    from urllib.parse import quote
+    import requests
+
+    seed = int(hashlib.sha256(f"{religion}:{target_date.isoformat()}".encode()).hexdigest()[:8], 16)
+    url = f"https://image.pollinations.ai/prompt/{quote(prompt)}?width=1000&height=1500&nologo=true&seed={seed}"
+    try:
+        resp = requests.get(url, timeout=60)
+        if resp.ok and resp.headers.get("content-type", "").startswith("image/"):
+            img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+            img = _fit_vertical_poster(img, 1000, 1500)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            img.save(output_path, format="PNG")
+            return output_path
+    except Exception:
+        return None
+    return None
+
+
 def generate_artwork(
     prompt_subject: str,
     target_date: date,
@@ -75,44 +100,49 @@ def generate_artwork(
     model: str | None = None,
 ) -> tuple[Path, bool]:
     """
-    Generate daily devotional artwork using Gemini Image API.
-    Returns (image_path, used_ai). Falls back to procedural background if API key is missing.
+    Generate daily devotional artwork using Gemini Image API, falling back to
+    free Pollinations AI or procedural background if quota/API key is unavailable.
     """
-    api_key = os.getenv("GEMINI_API_KEY", "").strip()
-    if not api_key or api_key == "your_gemini_api_key_here":
-        return _generate_fallback_art(output_path, accent_hex, target_date), False
-
-    from google import genai
-    from google.genai import types
-
-    client = genai.Client(api_key=api_key)
-    model_name = model or os.getenv("GEMINI_IMAGE_MODEL", "gemini-nano-banana-2.1")
     prompt = build_art_prompt(prompt_subject, target_date, religion)
+    api_key = os.getenv("GEMINI_API_KEY", "").strip()
 
-    response = client.models.generate_content(
-        model=model_name,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE"],
-        ),
-    )
+    if api_key and api_key != "your_gemini_api_key_here":
+        from google import genai
+        from google.genai import types
 
-    image_bytes: bytes | None = None
-    for part in getattr(response, "parts", []) or []:
-        inline = getattr(part, "inline_data", None)
-        if inline and getattr(inline, "data", None):
-            data = inline.data
-            image_bytes = base64.b64decode(data) if isinstance(data, str) else bytes(data)
-            break
+        client = genai.Client(api_key=api_key)
+        primary = model or os.getenv("GEMINI_IMAGE_MODEL", "gemini-nano-banana-2.1")
+        candidates = [primary]
+        if primary != "gemini-3.1-flash-lite-image":
+            candidates.append("gemini-3.1-flash-lite-image")
 
-    if not image_bytes:
-        raise RuntimeError(f"No image returned by model '{model_name}'.")
+        for model_name in candidates:
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        response_modalities=["IMAGE"],
+                    ),
+                )
+                for part in getattr(response, "parts", []) or []:
+                    inline = getattr(part, "inline_data", None)
+                    if inline and getattr(inline, "data", None):
+                        data = inline.data
+                        image_bytes = base64.b64decode(data) if isinstance(data, str) else bytes(data)
+                        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+                        img = _fit_vertical_poster(img, 1000, 1500)
+                        output_path.parent.mkdir(parents=True, exist_ok=True)
+                        img.save(output_path, format="PNG")
+                        return output_path, True
+            except Exception as exc:
+                print(f"[warn] Gemini model '{model_name}' unavailable ({type(exc).__name__}); trying fallback...")
 
-    img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    img = _fit_vertical_poster(img, 1000, 1500)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(output_path, format="PNG")
-    return output_path, True
+    pollinations_path = _generate_pollinations_art(prompt, target_date, religion, output_path)
+    if pollinations_path is not None:
+        return pollinations_path, True
+
+    return _generate_fallback_art(output_path, accent_hex, target_date), False
 
 
 def _fit_vertical_poster(img: Image.Image, target_w: int, target_h: int) -> Image.Image:
